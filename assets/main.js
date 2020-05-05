@@ -9,8 +9,17 @@
 // TODO 1: Use querySelector to assign EACH of the above 
 // elements to a variable, just like this:
 let searchButton = document.querySelector('#search-button')
+let textboxInput = document.querySelector('#textbox')
+let sentence = document.querySelector('#sentence')
+let searchResults = document.querySelector('#search-results')
 
 searchButton.addEventListener('click', function () {
+
+if(sentence.innerText.includes(textboxInput.value) ){
+    console.log("Oh Happy Day!")
+  } else{
+    console.log("Stormy Weather")
+  }
  
   // TODO 2: Write an IF statement which determines whether
   // the user-supplied string from #textbox is included in
